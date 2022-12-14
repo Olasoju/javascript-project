@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar {
+    display: flex;
+    background-color: green;
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+#brandName {
+    font-size: 2rem;
+    font-weight: bolder;
+    
+}
+
+.navbar-links {
+    display: flex;
+    column-gap: 70px;
+    
+}
+
+.navbar-links > a {
+    color: yellow;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+button {
+    background-color: white;
+    color: green;
+    border: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: green;
+    color: yellow;
+}
+
+#img {
+    display: none;
+}
+
+@media (max-width:700px) {
+    .navbar-links {
+        display: none;
+    }
+    .navbar-links ~ button {
+        display: none;
+    }
+    #img {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
